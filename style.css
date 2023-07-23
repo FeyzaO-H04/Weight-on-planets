@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-color: white;
+  font-family: 'Zilla Slab', serif;
+  font-size: 18px;
+  color: white;
+  min-width: 870px;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-decoration-none{
+  text-decoration: none;
+}
+
+/* nav */
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  height: 70px;
+  padding: 0 30px;
+}
+
+#nav span{
+  font-family: 'Monoton', cursive;
+  color: orangered;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#nav-right{
+  display: flex;
+  align-items: center;
+}
+
+#nav-right-first a{
+  padding: 2px 15px;
+  color: white;
+}
+
+#nav-right-first a:hover{
+  color: rgb(168, 166, 166);
+}
+
+#nav-right-second input{
+  border-radius: 5px;
+}
+
+#nav-right-second a{
+  color: white;
+}
+
+#nav-right-second a:hover{
+  color: rgb(168, 166, 166);
+}
+
+.border-right{
+  border-right: 1px solid white;
+}
+
+#input-height{
+  height: 30px;
+}
+
+/* header-image */
+#header-image{
+  background-image: url('img/iStock-1362060571.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+}
+
+#header-image-paragraph1{
+  position: absolute;
+  width: 450px;
+  right: 30px;
+  top: 30px;
+}
+
+#header-image-paragraph2{
+  position: absolute;
+  width: 300px;
+  left: 30px;
+  bottom: 30px;
+  font-size: 50px;
+}
+
+/* main */
+#main{
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-text{
+  align-items: center;
+  height: 200px;
+}
+
+#main-text p{
+  width: 800px;
+  margin: 50px 0;
+}
+
+#main-text input{
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+#calculation input{
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 15px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+#calculation button{
+  height: 42px;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: rgb(211, 58, 3);
+  color: white;
+  font-size: 16px;
+}
+
+/* grid-container */
+#grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  place-items: center;
+  row-gap: 50px; 
+  column-gap: 30px;
+  margin:60px 0;
+}
+
+.planets{
+  width: 150px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.planets h3{
+  margin: 15px 0;
+}
+
+.planets p{
+  font-family: 'Lato', sans-serif;
+  padding: 5px 0;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* footer */
+.footer{
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer i{
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+
+ 
+ 

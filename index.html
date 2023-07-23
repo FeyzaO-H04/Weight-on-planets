@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight On Planets Calculator</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!--JavaScript-->
+  <script src="script.js" defer></script>
+<!--google-font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <!--google-font-for number-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<!--Font Awesome-Icons-->
+  <script src="https://kit.fontawesome.com/5673f53053.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--nav-->
+  <div id="nav">
+    <a class="text-decoration-none" href="#planets"><span>PLANETS</span></a>
+    <div id="nav-right">
+      <div id="nav-right-first">
+        <a class="border-right text-decoration-none" href="#login">Login</a>
+        <a class="border-right text-decoration-none" href="#register">Register</a>
+        <a class="text-decoration-none" href="#new-password">New Password</a>
+      </div>
+      <div id="nav-right-second">
+        <input type="text" id="input-height">
+        <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--header-image-->
+  <div id="header-image">
+    <p class="header-paragraph" id="header-image-paragraph1">Your weight on other planets is a result of your mass, the strength of gravity on the planet and the distance you are from the centre of it. Your mass doesn't change on other planets, but the gravity and size of those planets affects how much you weight. This is why astronauts are able to jump so high on the Moon.</p>
+    <p class="header-paragraph" id="header-image-paragraph2">Weight on Other Planets Calculator</p> 
+  </div>
+  <!--main-->
+  <div id="main">
+    <div id="main-text" class="flex-column">
+      <p>To calculate your weight on other planets, moons, worlds and objects, enter your weight on the box below and click calculate. You may use any unit of measurement you like, the calculation will work with all measurements.</p>
+      <div id="calculation">
+        <input type="number" placeholder="Enter weight" id="weight-el">
+        <button onclick="calculateButton()">Calculate</button>
+      </div>
+    </div>
+    <!--grid-container-->
+    <div id="grid-container">  
+      <div class="planets flex-column">
+        <h3>Mercury</h3>
+        <img src="img/planets/mercury.gif" alt="">
+        <p id="mercury-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Venus</h3>
+        <img src="img/planets/venus.gif" alt="">
+        <p id="venus-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Mars</h3>
+        <img src="img/planets/mars.gif" alt="">
+        <p id="mars-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Jupiter</h3>
+        <img src="img/planets/jupiter.gif" alt="">
+        <p id="jupiter-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Saturn</h3>
+        <img src="img/planets/saturn.gif" alt="">
+        <p id="saturn-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Uranus</h3>
+        <img src="img/planets/uranus.gif" alt="">
+        <p id="uranus-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Neptune</h3>
+        <img src="img/planets/neptune.gif" alt="">
+        <p id="neptune-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>Pluto</h3>
+        <img src="img/planets/pluto.gif" alt="">
+        <p id="pluto-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>The Sun</h3>
+        <img src="img/planets/the sun.gif" alt="">
+        <p id="sun-el"></p>
+      </div>
+      <div class="planets flex-column">
+        <h3>The Moon</h3>
+        <img src="img/planets/the moon.gif" alt="">
+        <p id="moon-el"></p>
+      </div>
+
+    </div> 
+  </div>
+  <!--footer--> 
+  <div class="footer">
+    <i class="fa-regular fa-copyright"></i>
+    <p>2023 All Rights Reserved</p>
+  </div>
+
+</body>
+</html>
